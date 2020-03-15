@@ -7,7 +7,7 @@ It's an AutoHotkey's script designed to help who needs to login in multiple acco
 [AutoHotkey 1.1+](https://www.autohotkey.com/download/)
 
 ## How it works?
-On your first run, it'll create an INI file inside Documents Folder called accountList.ini, you can also access it on script's tray menu. At this file, you just need to fill your accounts credentials.
+On your first run, it'll create an INI file inside Documents Folder called accountList.ini, you can also access it on script's tray menu: "Config". Inside this file, you just need to fill your accounts credentials using INI pattern.
 
 ## INI File Example
 ```ini
