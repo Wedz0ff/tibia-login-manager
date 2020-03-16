@@ -52,8 +52,7 @@ Gui Show, w224 h342, Tibia Login
 Gui, Show, ,, Actions
 
 Action:
-If ((A_GuiEvent = "DoubleClick") || (Trigger_Action))
-{
+If ((A_GuiEvent = "DoubleClick") || (Trigger_Action)){
 	Gui, Submit
 	IniRead, acc, %A_MyDocuments%\accountList.ini, %charName%, email
 	IniRead, pw, %A_MyDocuments%\accountList.ini, %charName%, password
@@ -73,4 +72,4 @@ ExitApp
 
 GuiEscape:
 GuiClose:
-    ExitApp
+ExitApp
