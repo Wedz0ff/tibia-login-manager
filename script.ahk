@@ -13,7 +13,7 @@ if !FileExist(reifu){
 
 iniFile := A_MyDocuments "\accountList.ini"
 if !FileExist(iniFile){
-	FileAppend , [Account 01]`nemail=a@a.com`npw=lol123`n`n[Wedzy]`nemail=a@a.com`npw=lol123`n`n[Eternal Oblivion]`nemail=a@a.com`npw=lol123, %A_MyDocuments%\accountList.ini
+	FileAppend , [Account 01]`nemail=a@a.com`npassword=lol123`n`n[Wedzy]`nemail=a@a.com`npassword=lol123`n`n[Eternal Oblivion]`nemail=a@a.com`npassword=lol123, %A_MyDocuments%\accountList.ini
 }
 
 #SingleInstance Force
