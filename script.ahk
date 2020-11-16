@@ -1,5 +1,5 @@
-﻿SCRIPT_CREATOR = "Wed"
-SCRIPT_VERSION = 1.0
+SCRIPT_CREATOR = "Wed"
+SCRIPT_VERSION = 1.2
 
 favicon := A_Temp "\favicon.png"
 if !FileExist(favicon){
@@ -30,14 +30,15 @@ accLogin(ByRef Acc, ByRef Pass){
 	random, waitTime, 150, 400
 	IfWinExist, ahk_exe client.exe
 	WinActivate
-	SendRaw, %Acc%
+	clipboard := Acc
+	Send ^v
 	Sleep, waitTime
 	Send, {TAB}
-	Sleep, waitTime
-	SendRaw, %Pass%
+	clipboard := Pass
+	Send ^v
 	Sleep, waitTime
 	Send, {ENTER}
-	Sleep, 100
+	clipboard := ""
 	ExitApp
 }
 
@@ -52,7 +53,8 @@ Gui Show, w224 h342, Tibia Login
 Gui, Show, ,, Actions
 
 Action:
-If ((A_GuiEvent = "DoubleClick") || (Trigger_Action)){
+If ((A_GuiEvent = "DoubleClick") || (Trigger_Action))
+{
 	Gui, Submit
 	IniRead, acc, %A_MyDocuments%\accountList.ini, %charName%, email
 	IniRead, pw, %A_MyDocuments%\accountList.ini, %charName%, password
@@ -72,4 +74,4 @@ ExitApp
 
 GuiEscape:
 GuiClose:
-ExitApp
+    ExitApp
