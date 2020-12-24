@@ -1,5 +1,7 @@
 # Tibia Account Login
 
+![Preview](https://i.imgur.com/PL323lZ.png)
+
 ## About
 It's an AutoHotkey's script designed to help who needs to login in multiple accounts.
 
