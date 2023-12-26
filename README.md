@@ -7,7 +7,7 @@
 ## About
 It's an AutoHotkey's script designed to help who needs to login in multiple accounts.
 
-## Requeriments
+## Requirements
 [AutoHotkey 1.1+](https://www.autohotkey.com/download/)
 
 ## Download
